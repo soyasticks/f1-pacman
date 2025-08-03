@@ -1,5 +1,3 @@
-SUPREME_QUALITY_SOUNDS = False
-
 import copy
 from  game_board import boards
 import pygame
@@ -11,17 +9,10 @@ pygame.mixer.init()
 
 pygame.time.Clock()
 
-if SUPREME_QUALITY_SOUNDS:
-    # chomp = pygame.mixer.Sound("./sound/ChompSupreme.mp3")
-    ghost = pygame.mixer.Sound("./sound/GhostSupreme.mp3")
-    death = pygame.mixer.Sound("./sound/DeathSupreme.mp3")
-    fruit = pygame.mixer.Sound("./sound/FruitSupreme.mp3")
-    intro = pygame.mixer.Sound("./sound/IntroSupreme.mp3")
-else:
-    ghost = pygame.mixer.Sound("./sound/Ghost.mp3")
-    death = pygame.mixer.Sound("./sound/Death.mp3")
-    fruit = pygame.mixer.Sound("./sound/Fruit.mp3")
-    intro = pygame.mixer.Sound("./sound/Intro.mp3")
+ghost = pygame.mixer.Sound("./sound/Ghost.mp3")
+death = pygame.mixer.Sound("./sound/Death.mp3")
+fruit = pygame.mixer.Sound("./sound/Fruit.mp3")
+intro = pygame.mixer.Sound("./sound/Intro.mp3")
 
 window = pygame.display.set_mode((700, 700))
 WIDTH = 800
